@@ -1,2 +1,35 @@
 设一个变量记录每次跳跃能达到的最远位置(索引),当到达了那个索引的时候,就要再跳一次(jump次数+1),更新跳跃能达到的最远位置.
 如果跳到了最后一个位置就结束循环
+break 是一个优化策略，让算法在可以确定解时，能够立即终止.
+for循环的时候只需要循环到倒数第二个index就好了,我们只需要计算跳多少步,在最后一个index的时候不用跳
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class Solution:
+    def jump(self, nums: List[int]) -> int:
+        cur_end=0
+        jump=0
+        farthest=0
+        if len(nums)==1:
+            return 0
+        for i in range(len(nums)-1):
+            farthest=max(farthest,i+nums[i])
+            if i==cur_end:
+                jump+=1
+                cur_end=farthest
+            if cur_end >= len(nums)-1:
+                break
+        return jump
