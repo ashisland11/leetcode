@@ -10,6 +10,7 @@ Python 的列表是动态数组，它不支持在 O(1) 时间内直接移除某�
 
 
 del 可以根据键删除字典中的元素。如果键不存在，则会抛出 KeyError。
+当你将 last_element 移动到 index_to_remove 的位置时，你必须更新字典中 last_element 的索引，否则字典中存储的 last_element 的索引将是错误的。
 my_dict = {"a": 1, "b": 2, "c": 3}
 
 # 删除键 'a'
