@@ -1,0 +1,33 @@
+python 反向排序: myList.sort(reverse=True)
+
+enumerate(citations) 是 Python 中的一个函数，它会同时返回 citations 数组中的每个元素的索引和值。具体解释如下：
+enumerate 的作用：
+当你使用 enumerate(citations) 时，每次迭代会返回一个元组 (i, c)，其中：
+
+i 是当前元素的索引（从 0 开始）。
+c 是当前索引对应的引用次数。
+
+
+用sort将数组进行排序(先从引用量多的index进行比较,因为后面的更小),然后每个引用次数和当前paper数量比较,当前index 引用数量>当前paper数量,h+1,一直到引用数量<当前paper数量
+[6,5,3,1,0]
+index =0 citations=6 paper数量:1 6>1
+index=1 citations=5 paper数量:2 5>2
+index=3 citations=3 paper:3 3>=3
+index=4 citations=1 paper:4   1<4 h=3
+
+
+
+
+
+
+
+class Solution:
+    def hIndex(self, citations: List[int]) -> int:
+        h=0
+        citations.sort(reverse=True)
+        for i,c in enumerate(citations):
+            if c>=h+1:
+                h+=1
+            else:
+                break
+        return h
