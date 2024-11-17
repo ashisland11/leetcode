@@ -20,4 +20,4 @@ print(result)  # 输出: hello world
 result = ', '.join(words)
 print(result)  # 输出: hello, world
 
-注意一种情况是遍历到了string的最后一个单词的最后一个字母,后面没有空格触发,就要单独把这个单词放到list中(确保字符串末尾的单词被考虑到)
+注意一种情况是遍历到了string的最后一个单词的最后一个字母,后面没有空格触发,就要单独把这个单词放到list中(确保字符串末尾的单词在for循环结束后被考虑到)
