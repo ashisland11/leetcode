@@ -4,3 +4,20 @@ len(s) 计算的是字符串 s 的总长度，这包括了其中的所有字符�
 for循环一次遍历 把单词提取到一个list里面
 利用列表逆序 转换顺序
 最后用join转化成字符串格式
+
+
+join将序列中的元素连接成一个新的字符串
+# 使用空字符串作为分隔符
+words = ["hello", "world"]
+result = ''.join(words)
+print(result)  # 输出: helloworld
+
+# 使用空格作为分隔符
+result = ' '.join(words)
+print(result)  # 输出: hello world
+
+# 使用逗号加空格作为分隔符
+result = ', '.join(words)
+print(result)  # 输出: hello, world
+
+注意一种情况是遍历到了string的最后一个单词的最后一个字母,后面没有空格触发,就要单独把这个单词放到list中
