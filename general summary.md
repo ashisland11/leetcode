@@ -17,7 +17,6 @@
 +在 Python 中，float('inf') 用来表示一个无限大的浮点数 float('-inf') 表示负无限大  ---infinite
 +# 创建一个空的列表作为栈
 stack = [] 先进后出
-
-# push 操作：添加元素到栈顶
+push 操作：添加元素到栈顶
 stack.append(10)
 stack.pop 
