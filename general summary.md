@@ -15,8 +15,11 @@
 4
 + list.sort() 是一个就地排序方法，不会返回排序后的列表，而是直接修改原列表。这样写会导致 nums 的值变成 None. 排序直接写list.sort()
 + 在 Python 中，float('inf') 用来表示一个无限大的浮点数 float('-inf') 表示负无限大  ---infinite
-+ # 创建一个空的列表作为栈
++ 创建一个空的列表作为栈
 + stack = [] 先进后出
 + push 操作：添加元素到栈顶
 + stack.append(10)
-+ stack.pop 
++ stack.pop
++ . —— 表示当前目录。
+.. —— 表示父目录，也就是当前目录的上一级目录。
++ 
