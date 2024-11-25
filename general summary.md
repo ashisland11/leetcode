@@ -25,3 +25,5 @@
 + parts = ['home', 'user', 'documents', 'file.txt']
 +path = '/'.join(parts)
 + 查看栈顶元素: stack[-1] 栈底元素:stack[0]
++ stack: append, pop
++ ]：在Python中，当使用负数进行除法时，结果向零取整的方式与C++或Java不同。Python中使用的是向负无穷取整，因此需要特别处理，使结果总是向零取整。可以通过使用int(a / b)来实现。
