@@ -1,0 +1,3 @@
+反转链表
+reverse代表链表的头节点head.next从指向下一个节点变成指向null
+其他节点node.next改成指向node.previous
