@@ -3,4 +3,5 @@
 连接反转后的部分和未反转的部分。
 更新指针，准备处理下一组节点。
 
-![Uploading image.png…]()
+<img width="605" alt="image" src="https://github.com/user-attachments/assets/3efc7a80-5188-4dfc-a1f5-23a748d6fdb0" />
+
