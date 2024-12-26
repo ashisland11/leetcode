@@ -1,3 +1,4 @@
+```
 maxDepth(1)  # root = 1
    |
    +--> maxDepth(2)  # root.left = 2
