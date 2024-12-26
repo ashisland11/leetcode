@@ -38,6 +38,8 @@
 + // 是整除，直接舍弃小数部分，仅保留商的整数部分：
 + linkedlist: 记住排除链表长度可能为0的情况
 + linked list核心是找到链表的头和尾巴
++ <img width="690" alt="image" src="https://github.com/user-attachments/assets/6082c954-6e24-4e8b-817c-b167fdb0e7c2" />
+
 
 
 
