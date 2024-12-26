@@ -24,3 +24,10 @@ maxDepth(1)  # root = 1
           +--> returns 1  # max(0, 0) + 1 = 1
    |
    +--> returns 3  # max(2, 1) + 1 = 3
+
+       1
+     /   \
+    2     3
+   / \
+  4   5
+
